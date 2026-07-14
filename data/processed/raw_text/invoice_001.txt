@@ -1,0 +1,8 @@
+RECHNUNG / INVOICE
+Rechnungssteller: Buerobedarf Mueller GmbH
+Rechnungsnummer: RE-2026-0451
+Rechnungsdatum: 05.07.2026
+Nettobetrag: 250.00 EUR
+USt-Satz: 19%
+USt-Betrag: 47.50 EUR
+Gesamtbetrag: 297.50 EUR

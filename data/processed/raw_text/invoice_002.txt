@@ -1,0 +1,8 @@
+RECHNUNG / INVOICE
+Rechnungssteller: Software Solutions AG
+Rechnungsnummer: INV-9981
+Rechnungsdatum: 10.07.2026
+Nettobetrag: 1200.00 EUR
+USt-Satz: 19%
+USt-Betrag: 228.00 EUR
+Gesamtbetrag: 1428.00 EUR

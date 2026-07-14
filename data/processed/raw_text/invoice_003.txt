@@ -1,0 +1,8 @@
+RECHNUNG / INVOICE
+Rechnungssteller: Bio-Catering Berlin
+Rechnungsnummer: BC-2026-077
+Rechnungsdatum: 12.07.2026
+Nettobetrag: 85.50 EUR
+USt-Satz: 7%
+USt-Betrag: 5.99 EUR
+Gesamtbetrag: 91.49 EUR
