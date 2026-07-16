@@ -1,0 +1,5 @@
+streamlit
+pdfplumber
+anthropic
+python-dotenv
+pandas

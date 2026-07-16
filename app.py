@@ -9,6 +9,7 @@ import pandas as pd
 import os
 from dotenv import load_dotenv
 from anthropic import Anthropic
+import streamlit as st
 
 load_dotenv()
 
@@ -16,7 +17,8 @@ load_dotenv()
 DB_PATH = Path("data/processed/invoices.db")
 DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 
-client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+api_key = st.secrets.get("ANTHROPIC_API_KEY", os.environ.get("ANTHROPIC_API_KEY"))
+client = Anthropic(api_key=api_key)
 VALID_VAT_RATES = [0, 7, 19]
 
 EXTRACTION_PROMPT = """You are an invoice data extraction system for German businesses.
