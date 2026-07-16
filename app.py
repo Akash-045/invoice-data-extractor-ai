@@ -10,16 +10,24 @@ import os
 from dotenv import load_dotenv
 from anthropic import Anthropic
 
-
 load_dotenv()
 
 # --- Setup ---
 DB_PATH = Path("data/processed/invoices.db")
 DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 
-client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
-VALID_VAT_RATES = [0, 7, 19]
+# Works both locally (.env) and on Streamlit Cloud (Secrets)
+api_key = st.secrets.get("ANTHROPIC_API_KEY", os.environ.get("ANTHROPIC_API_KEY"))
 
+if not api_key:
+    st.error(
+        "⚠️ No API key found. Locally: add ANTHROPIC_API_KEY to your .env file. "
+        "On Streamlit Cloud: add it under Manage app → Settings → Secrets."
+    )
+    st.stop()
+
+client = Anthropic(api_key=api_key)
+VALID_VAT_RATES = [0, 7, 19]
 EXTRACTION_PROMPT = """You are an invoice data extraction system for German businesses.
 
 Extract the following fields from the invoice text below. Return ONLY valid JSON,
