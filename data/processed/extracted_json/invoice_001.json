@@ -1,0 +1,10 @@
+{
+  "vendor": "Buerobedarf Mueller GmbH",
+  "invoice_number": "RE-2026-0451",
+  "invoice_date": "2026-07-05",
+  "net_amount": 250.0,
+  "vat_rate": 19,
+  "vat_amount": 47.5,
+  "total_amount": 297.5,
+  "currency": "EUR"
+}

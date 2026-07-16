@@ -1,0 +1,10 @@
+{
+  "vendor": "Bio-Catering Berlin",
+  "invoice_number": "BC-2026-077",
+  "invoice_date": "2026-07-12",
+  "net_amount": 85.5,
+  "vat_rate": 7,
+  "vat_amount": 5.99,
+  "total_amount": 91.49,
+  "currency": "EUR"
+}
